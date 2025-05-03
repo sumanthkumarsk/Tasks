@@ -1,0 +1,58 @@
+body {
+  font-family: Georgia, serif;
+  margin: 2em;
+  padding: 0;
+  background-color: #d1cc00; /* Yellow background */
+}
+
+.container {
+  display: flex;
+  max-width: 800px;
+}
+
+nav {
+  width: 150px;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  display: block;
+  background-color: white;
+  color: blue;
+  text-decoration: none;
+  padding: 10px;
+  border-right: 10px solid black;
+}
+
+nav ul li a:hover {
+  background-color: #eee;
+}
+
+main {
+  flex: 1;
+}
+
+h1 {
+  color: purple;
+}
+
+p {
+  color: black;
+}
+
+.footer {
+  margin-top: 2em;
+  font-style: italic;
+  color: #555;
+  border-top: 1px solid #999;
+  padding-top: 10px;
+}

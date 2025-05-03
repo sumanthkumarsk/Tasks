@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        
+        .list{
+            width: 300px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 0 auto;
+            height: auto;
+        }
+        .links{
+            margin-top:30px;
+            padding:10px;
+            background-color: rgb(215, 212, 212);
+            border:2px solid black;
+        }
+        .links a{
+            color:blue;
+        }
+       
+    </style>
+<body>
+   <div class="list">
+        <p>list can be listed(list inside list)</p>
+        <ul type="circle-filled">
+            
+            <li>Coffee</li>
+            <li>tea</li>
+            <ul type="circle">
+                <li>Black tea</li>
+                <li>Green Tea</li>
+            </ul>
+            <li>Milk</li>
+        </ul>
+    </div>
+    <div class="links">
+        <p>Click any of the following links</p>
+        <a href="https://youtube.com/" target="_blank">Opens in New </a> |
+        <a href="https://youtube.com/" target="_self">Opens in self </a>  |
+        <a href="https://youtube.com/" target="_parent">Opens in parent</a>|
+        <a href="https://youtube.com/" target="_top">Opens in Body</a>
+
+
+    </div>
+</body>
+</html>

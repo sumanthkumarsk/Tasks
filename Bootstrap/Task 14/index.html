@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Material Cards</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .material-card {
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: 0.3s;
+    }
+
+    .material-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-title-overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 1.25rem;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .card-links a {
+      color: goldenrod;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .card-links a:hover {
+      text-decoration: underline;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+
+    <!-- Card with overlay image and title -->
+    <div class="col">
+      <div class="card material-card">
+        <div class="position-relative">
+          <img src="https://th.bing.com/th/id/OIP.hEwrRUVUfYGpIQfbLqmNigHaEr?w=261&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="card-img-top" alt="Card image">
+          <div class="card-title-overlay">Material Cards</div>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Cards for display in portfolio style material design by Google.</p>
+          <div class="card-links">
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card with solid background title -->
+    <div class="col">
+      <div class="card material-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="card-img-top" alt="Ocean background">
+        <div class="card-body">
+          <h5 class="card-title">Material Cards</h5>
+          <p class="card-text">Cards for display in portfolio style material design by Google.</p>
+          <div class="card-links">
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeatable card -->
+    <div class="col">
+      <div class="card material-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="card-img-top" alt="Ocean background">
+        <div class="card-body">
+          <h5 class="card-title">Material Cards</h5>
+          <p class="card-text">Cards for display in portfolio style material design by Google.</p>
+          <div class="card-links">
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeatable card -->
+    <div class="col">
+      <div class="card material-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="card-img-top" alt="Ocean background">
+        <div class="card-body">
+          <h5 class="card-title">Material Cards</h5>
+          <p class="card-text">Cards for display in portfolio style material design by Google.</p>
+          <div class="card-links">
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

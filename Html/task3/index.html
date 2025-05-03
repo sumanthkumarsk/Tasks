@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input:not([type="radio"],[type="checkbox"]) {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+    th{
+        width:90px;
+    }
+    td{
+        width: 300px;
+    }
+    p{
+        width:100%;
+        text-align: right;
+    }
+    h2{
+        color:blue;
+    }
+    #web{
+        border:none;
+    }
+    table{
+        margin-bottom: 30px;
+    }
+    textarea{
+        height:90px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <center>
+        <h2>Registration Form</h2>
+        <table border="2">
+            <tr>
+                <th><label for="Fname" name="fname">First Name</label></th>
+                <td><input type="text" name="fname" required> </td>
+            </tr>
+            <tr>
+                <th><label for="Lname" name="Lname">Last Name</label></th>
+                <td><input type="text" name="Lname" required> </td>
+            </tr>
+            <tr>
+                <th><label for="Email" name="Email">Email</label></th>
+                <td><input type="email" name="Email" required> </td>
+            </tr>
+            <tr>
+                <th><label for="Gender" name="Gender">Gender</label></th>
+                <td><input type="radio" id="male" name="gender" value="Male"> Male
+                  <input type="radio" id="female" name="gender" value="Female"> Female</td>
+
+                    
+            </tr>
+            <tr>
+                <th><label for="age" name="age">Age</label></th>
+                <td><input type="number" name="age" > </td>
+            </tr>
+            <tr>
+                <th><label for="phonenumber" name="phonenumber">PhoneNumber</label></th>
+                <td><input type="tel" name="phonenumber" > </td>
+            </tr>
+            <tr>
+                <th><label for="address" name="address">Address</label></th>
+            
+                <td>
+                    <textarea  id="address" name="address" row="20" placeholder="Enter your full address" require></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="state" name="State">State</label></th>
+                <td><input type="text" name="State" > </td>
+            </tr>
+            <tr>
+                <th><label for="country">Country:</label></th>
+                <td>
+                  <select id="country" name="country" required>
+                    <option value="">--Select--</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th><label>Known Languages:</label></th>
+                <td>
+                  <input type="checkbox" id="english" name="languages" value="English">
+                  <label for="english">English</label><br>
+              
+                  <input type="checkbox" id="kannada" name="languages" value="Kannada">
+                  <label for="kannada">Kannada</label><br>
+              
+                  <input type="checkbox" id="hindi" name="languages" value="Hindi">
+                  <label for="hindi">Hindi</label><br>
+            
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input type="checkbox" id="declaration" name="declaration" required>
+                  <label for="declaration">Hereby I declare that all the details given above are true.</label>
+                </td>
+              </tr>
+              <tr>
+                
+               <td id="web"></td>
+                <td>Log in to <a href="www.acharya.com" target="_self">Acharya</a> Website</td>
+              </tr>
+              
+              
+        </table>
+        <button type="submit">Register</button>
+    </center>
+
+</body>
+</html>

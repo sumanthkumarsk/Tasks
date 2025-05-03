@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Full Validated Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container mt-5">
+  <h3 class="mb-4">Project Request Form</h3>
+  <form id="projectForm" class="needs-validation" novalidate>
+
+    <!-- First Name -->
+    <div class="mb-3">
+      <label for="firstName" class="form-label">First Name</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-user"></i></span>
+        <input type="text" class="form-control" id="firstName" required>
+        <div class="invalid-feedback">Please supply your first name</div>
+      </div>
+    </div>
+
+    <!-- Last Name -->
+    <div class="mb-3">
+      <label for="lastName" class="form-label">Last Name</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-user"></i></span>
+        <input type="text" class="form-control" id="lastName" required>
+        <div class="invalid-feedback">Please supply your last name</div>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="mb-3">
+      <label for="email" class="form-label">E-Mail</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Please supply your email address</div>
+      </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone #</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+        <input type="text" class="form-control" id="phone" required>
+        <div class="invalid-feedback">Please supply your phone number</div>
+      </div>
+    </div>
+
+    <!-- Address -->
+    <div class="mb-3">
+      <label for="address" class="form-label">Address</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-home"></i></span>
+        <input type="text" class="form-control" id="address" required>
+        <div class="invalid-feedback">Please supply your street address</div>
+      </div>
+    </div>
+
+    <!-- City -->
+    <div class="mb-3">
+      <label for="city" class="form-label">City</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-home"></i></span>
+        <input type="text" class="form-control" id="city" required>
+        <div class="invalid-feedback">Please supply your city</div>
+      </div>
+    </div>
+
+    <!-- State -->
+    <div class="mb-3">
+      <label for="state" class="form-label">State</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-list"></i></span>
+        <select class="form-select" id="state" required>
+          <option value="">Please select your state</option>
+          <option value="NY">New York</option>
+          <option value="CA">California</option>
+          <option value="TX">Texas</option>
+        </select>
+        <div class="invalid-feedback">Please select your state</div>
+      </div>
+    </div>
+
+    <!-- Hosting -->
+    <div class="mb-3">
+      <label class="form-label">Do you have hosting?</label>
+      <div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="hosting" id="hostingYes" value="yes" required>
+          <label class="form-check-label" for="hostingYes">Yes</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="hosting" id="hostingNo" value="no" required>
+          <label class="form-check-label" for="hostingNo">No</label>
+        </div>
+        <div class="invalid-feedback d-block">Please select hosting option</div>
+      </div>
+    </div>
+
+    <!-- Project Description -->
+    <div class="mb-3">
+      <label for="description" class="form-label">Project Description</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="fas fa-pencil-alt"></i></span>
+        <textarea class="form-control" id="description" required></textarea>
+        <div class="invalid-feedback">Please enter a project description</div>
+      </div>
+    </div>
+
+    <!-- Submit -->
+    <button class="btn btn-warning text-white" type="submit">
+      <i class="fas fa-paper-plane"></i> Send
+    </button>
+
+  </form>
+</div>
+
+<!-- JS for Validation -->
+<script>
+  (() => {
+    'use strict';
+    const form = document.getElementById('projectForm');
+
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  })();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
